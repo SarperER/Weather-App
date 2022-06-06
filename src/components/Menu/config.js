@@ -4,7 +4,7 @@ import {
   
   export const menuSettings = [
     {
-      label: "Ana Sayfa",
+      label: "Home",
       icon: faHome,
       url: "/home",
     }

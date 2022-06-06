@@ -1,14 +1,18 @@
 import SideBar from "./components/Menu/SideBar";
 import { BrowserRouter } from "react-router-dom";
-import Weather from "./components/Weather/Weather";
-import { MainContainer } from "./style";
+import FeatureWeather from "./components/FeatureWeather/FeatureWeather";
+import InstantWeather from "./components/InstantWeather/InstantWeather";
+import { MainContainer, MainApp } from "./style";
 
 function App() {
   return (
     <BrowserRouter>
       <MainContainer fluid>
         <SideBar />
-        <Weather />
+        <MainApp fluid>
+          <InstantWeather />
+          <FeatureWeather />
+        </MainApp>
       </MainContainer>
     </BrowserRouter>
   );

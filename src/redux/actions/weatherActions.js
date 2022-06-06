@@ -7,7 +7,7 @@ export function getWeatherSuccess(data) {
 
 export function getWeatherStatus(city) {
     if (city === undefined) {
-        city = "Antalya"
+        city = "Gaciantep"
     }
     return fetch(`https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${city}?unitGroup=metric&key=UURCWWET42AWJHJDWW69NHB3Q&contentType=json`);
   }

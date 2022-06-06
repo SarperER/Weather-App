@@ -1,16 +1,9 @@
 import styled from "styled-components";
 import { ProSidebar, SidebarHeader, Menu } from "react-pro-sidebar";
-import { Button } from 'reactstrap';
+import { Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const backgrounds = {
-    modalBackground: "#15202B",
-    menuBackground: "#15202B",
-    profileAccordions: "#b4b4b4",
-    cardBackground: "#FFFFFF",
-    todoAccordions: "rgb(0, 76, 153)",
-    onlineUsers: "rgb(0, 76, 153)",
-}
+
 
 export const MenuContainer = styled.div`
 display:block;`;
@@ -43,10 +36,10 @@ export const SidebarContainer = styled(ProSidebar)`
 
 export const MobileMenuButton = styled(Button)`
   cursor: pointer;
-${backgrounds};
-  background: #15202B;
+  background: white;
+  color: black;
   text-align: center;
-  border-radius: 50%;
+  border-radius: 10%;
   align-items: center;
   justify-content: center;
   font-size: 15px;
